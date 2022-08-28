@@ -22,19 +22,19 @@
 
         }
         Console.WriteLine();
-      }
-      Console.WriteLine("---------------------------");
+    }
+    Console.WriteLine("---------------------------");
 }
 void FillArray(double[,]arr)
 {
-     for(int i = 0;i<arr.GetLength(0);i++)
-     {
-          for(int j =0;j<arr.GetLength(1); j++)
-          {
-                arr[i,j] = Convert.ToDouble(new Random().Next(-100, 101)/10.0);
-           }
-       }
-       Console.WriteLine();
+    for(int i = 0;i<arr.GetLength(0);i++)
+    {
+        for(int j =0;j<arr.GetLength(1); j++)
+        {
+            arr[i,j] = Convert.ToDouble(new Random().Next(-100, 101)/10.0);
+        }
+    }
+    Console.WriteLine();
 }
 Console.Write("Введите количество строк массива: ");
 int m = Convert.ToInt32(Console.ReadLine());
